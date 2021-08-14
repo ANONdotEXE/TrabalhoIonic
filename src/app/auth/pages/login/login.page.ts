@@ -37,5 +37,4 @@ export class LoginPage implements OnInit {
    onSubmit(): void {
     console.log('AuthForm: ', this.authForm.value);
   }
-
 }
