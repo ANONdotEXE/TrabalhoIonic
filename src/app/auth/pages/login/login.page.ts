@@ -15,6 +15,10 @@ export class LoginPage implements OnInit {
   authForm: FormGroup;
   constructor(private fb: FormBuilder) {}
 
+  onSubmit(): void {
+    console.log('AuthForm: ', this.authForm.value);
+  }
+
   ngOnInit(): void {
     this.createForm();
   }
@@ -34,7 +38,4 @@ export class LoginPage implements OnInit {
     return this.authForm.get('password') as FormControl;
   }
 
-   onSubmit(): void {
-    console.log('AuthForm: ', this.authForm.value);
-  }
 }
